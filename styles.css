@@ -1,0 +1,123 @@
+:root {
+    --color1: rgb(255, 0, 0);
+}
+
+* {
+    background-color: #cbd5e1;
+    font-family: 'Jersey 25', sans-serif;
+}
+
+h1, h2, h3 {
+    font-size: 1.5vw;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 100px auto 100px;
+    gap: 15px 10px;
+}
+
+.label {
+    color: var(--color1, hsl(248, 53%, 58%));        
+}
+
+.video {
+    width: 5in;
+    height: 250px;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 2%;
+}
+
+.updates {
+    text-align: center;
+}
+
+input[type="text"] {
+    padding-right: 0;
+    padding-top: 1%;
+    padding-left: 0%;
+    padding-bottom: 1%;
+}
+
+ul > li {
+    color: color-mix(in lch, plum 40%, pink);
+}
+
+/* SUBMIT BUTTON STYLING */
+
+.submit {
+    width: 50%;
+    border-radius: 1%;
+    border-color: blue;
+    border-width: 5mm;
+    border-style: dashed;
+    font-size: 1.75em;
+    padding: 2.5% 5% 2.5% 5%;
+    margin: auto;
+    position: sticky;
+    color: color(display-p3 1 0.5 0);
+}
+
+.submit:hover {
+    border-color: red;
+}
+
+.submit:active {
+    border-color: yellow;
+}
+
+/* FEEDBACK FORM STYLING */
+
+.feedback-title {
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.feedback-form .honesty {
+    font-size: 1.6rem;
+    display: inline;
+}
+
+section {
+    & details {
+        font-size: 20px;
+        display: block;
+    }
+}
+
+.name ~ input {
+    background-color: gainsboro;
+}
+
+@media (max-width: 750px) {
+    * {
+        font-size: 20px;
+    }
+
+    .test1 + .test2 {
+        color: black;
+    }
+    
+    li.test0 {
+        color: red;
+    }
+
+    li:has(+ li) {
+        font-size: 30px;
+    }
+}
