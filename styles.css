@@ -93,9 +93,10 @@ ul > li {
     display: inline;
 }
 
-section {
-    details {
+.details {
+    & details {
         font-size: 20px;
+        color: blue;
         display: block;
     }
 }
