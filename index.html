@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor's Team Meeting Notes</title>
     <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.9041839f613b006ccca56074b7d7ecd5?rik=HIS1JTv2LwGZ8Q&riu=http%3a%2f%2ffreevector.co%2fwp-content%2fuploads%2f2010%2f10%2f78686-class-notes.png&ehk=etEmaSNQ0rC0AzeizveZiEfhdwKPe%2bDmTuU5fYq2REo%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Protest+Revolution&family=Protest+Riot&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #image {
+            max-width: 20%;
+            min-width: 10%;
+            position: fixed;
+            right: 2.5%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Meeting Notes Recorder</h1>
-        <img src="https://th.bing.com/th/id/OIP.VbuXb5c-eOGXLNQiTOgZ6AHaIH?rs=1&pid=ImgDetMain" alt="gitlab logo" />
+        <h1 style="color: green">Meeting Notes Recorder</h1>
+        <img src="https://th.bing.com/th/id/OIP.VbuXb5c-eOGXLNQiTOgZ6AHaIH?rs=1&pid=ImgDetMain" alt="gitlab logo" id="image"/>
         <p>Notes from each meeting</p>
     </header>
     <main>
@@ -17,9 +29,9 @@
             <h2>Day 1</h2>
             <h3>Attendance</h3>
             <ul>
-                <li><b>Victor</b></li>
-                <li>Another Person</li>
-                <li>Another Person 2</li>
+                <li class="test0"><b>Victor</b></li>
+                <li class="test1">Another Person</li>
+                <li class="test2">Another Person 2</li>
             </ul>
             <br>
             <h3>Updates</h3>
@@ -32,7 +44,7 @@
         </section>
         <section>
             <h3>Media</h3>
-            <video width="320" height="240" controls>
+            <video class="video" controls>
                 <source src="gitlab_meeting.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -42,19 +54,19 @@
                 </details>
         </section>
         <section>
-            <h3>Feedback Form</h3>
-            <form>
+            <h3 class="feedback-title">Feedback Form</h3>
+            <form class="feedback-form">
                 <fieldset>
-                    <label>Name:</label>
-                    <input type="text"><br><br>
-                    <label>Year:</label>
+                    <label class="label">Name:</label>
+                    <input class="name" type="text"><br><br>
+                    <label class="label">Year:</label>
                     <select name="year">
                         <option value="first">First</option>
                         <option value="second">Second</option>
                         <option value="third">Third</option>
                         <option value="fourth">Fourth</option>
                     </select><br><br>
-                    <label>Major:</label>
+                    <label class="label">Major:</label>
                     <input list="major">
                     <datalist id="major">
                         <option value="CS">
@@ -63,21 +75,24 @@
                         <option value="COGSCI">
                         <option value="Other">
                     </datalist><br><br>
-                    <label>Today's Date:</label>
+                    <label class="label">Today's Date:</label>
                     <input type="date"><br><br>
-                    <p>Did you attend the meeting today?</p>
+                    <p class="label">Did you attend the meeting today?</p>
                     <input type="radio" value="Yes">
                     <label>Yes</label><br>
                     <input type="radio" value="No">
                     <label>No</label><br><br>  
-                    <label>What would you like to see in future meetings?</label><br><br>
+                    <label class="label">What would you like to see in future meetings?</label><br><br>
                     <textarea></textarea>
                 </fieldset>
                 <br>
-                <input type="checkbox" name="terms" value="agreed">
-                <label>I agree I responded to the form to the best of my ability</label><br><br>
+                <div class="honesty">
+                    <input type="checkbox" name="terms" value="agreed">
+                    <label>I agree I responded to the form to the best of my ability</label>
+                </div>
+                <br><br>
                 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="submit">
             </form>
         </section>
     </main>

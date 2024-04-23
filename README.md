@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://vihsiao.github.io/Lab2_Starter/
+# Lab 3
+https://vihsiao.github.io/sp24-cse110-lab3/
