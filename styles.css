@@ -63,7 +63,7 @@ ul > li {
     padding: 2.5% 5% 2.5% 5%;
     margin: auto;
     position: sticky;
-    color: color(display-p3 1 0.5 0);
+    color: color(from 1 0.5 0);
 }
 
 .submit:hover {
@@ -94,7 +94,7 @@ ul > li {
 }
 
 section {
-    & details {
+    details {
         font-size: 20px;
         display: block;
     }
